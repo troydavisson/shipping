@@ -227,7 +227,7 @@ class Rate extends RateAdapter
 				->setCarrier('fedex')
 				->setCode($code)
 				->setName($name)
-				->setCost((int) $cost * 100)
+				->setCost((int) ($cost * 100))
 				->setTransitTime($transit_time);
 			if ($delivery_ts) {
 				$quote->setDeliveryEstimate(new DateTime($delivery_ts));
