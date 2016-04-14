@@ -239,7 +239,7 @@ class Rate extends RateAdapter
 				->setCarrier('ups')
 				->setCode($code)
 				->setName($name)
-				->setCost((int) $cost * 100);
+				->setCost((int) ($cost * 100));
 			$this->rates[] = $quote;
 		}
 
